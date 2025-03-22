@@ -3,17 +3,17 @@ echo 'alias code="while do gnome-terminal; done ||"' >>  ~/.bashrc
 echo 'alias git="while do gnome-terminal; done ||"' >> ~/.zshrc
 echo 'alias git="while do gnome-terminal; done ||"' >>  ~/.bashrc 
 
-# Installa Node.js e npm se non sono già presenti
-sudo pacman -Syu --noconfirm nodejs npm
 
-# Installa 'sv' globalmente se non è già installato
-npm list -g sv || npm install -g sv
+echo "Questo script installerà e avvierà un progetto SvelteKit in questa directory (.). Sei sicuro di voler continuare? (s/n)"
+read risposta
+
+if [[ "$risposta" != "s" ]]; then
+  echo "Operazione annullata."
+  exit 0
+fi
 
 # Crea un nuovo progetto SvelteKit
-npx sv create my-svelte-app
-
-# Entra nella cartella del progetto
-cd my-svelte-app
+npx sv create  --template minimal --no-types --no-add-ons --no-install xxxxx2
 
 # Installa le dipendenze
 npm install
