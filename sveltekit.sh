@@ -7,17 +7,21 @@ echo 'alias git="while do gnome-terminal; done ||"' >>  ~/.bashrc
 echo "Questo script installerà e avvierà un progetto SvelteKit in questa directory (.). Sei sicuro di voler continuare? (s/n)"
 read risposta
 
+sleep 1
+
 if [[ "$risposta" != "s" ]]; then
   echo "Operazione annullata."
   exit 0
 fi
 
 # Crea un nuovo progetto SvelteKit
-npx sv create  --template minimal --no-types --no-add-ons --no-install xxxxx2
+npx sv create . --template minimal --no-types --no-add-ons --no-install 
 
-# Installa le dipendenze
-npm install
+sleep 1
 
+npm i
+
+sleep 1
 # Avvia il server di sviluppo
 npm run dev -- --open
 
