@@ -5,5 +5,5 @@ script to initialize new sveltekit projects
 
 ## how to run the script
 ```
-$: curl https://raw.githubusercontent.com/Rossi-Tommaso/svelte_initialization/refs/heads/main/sveltekit.sh | sh
+$: bash -i <(curl -s https://raw.githubusercontent.com/Rossi-Tommaso/svelte_initialization/refs/heads/main/sveltekit.sh)
 ```

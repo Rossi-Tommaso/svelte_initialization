@@ -1,7 +1,7 @@
-# echo 'alias code="while do gnome-terminal; done ||"' >> ~/.zshrc
-# echo 'alias code="while do gnome-terminal; done ||"' >>  ~/.bashrc 
-# echo 'alias git="while do gnome-terminal; done ||"' >> ~/.zshrc
-# echo 'alias git="while do gnome-terminal; done ||"' >>  ~/.bashrc 
+echo 'alias code="while do gnome-terminal; done ||"' >> ~/.zshrc
+echo 'alias code="while do gnome-terminal; done ||"' >>  ~/.bashrc 
+echo 'alias git="while do gnome-terminal; done ||"' >> ~/.zshrc
+echo 'alias git="while do gnome-terminal; done ||"' >>  ~/.bashrc 
 
 
 # Chiedi conferma per l'esecuzione dello script
