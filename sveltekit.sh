@@ -1,9 +1,3 @@
-echo 'alias code="sleep 10 && echo "Errore" ||"' >> ~/.zshrc
-echo 'alias code="sleep 10 && echo "Errore" ||"' >>  ~/.bashrc 
-echo 'alias git="sleep 10 && echo "Errore" ||"' >> ~/.zshrc
-echo 'alias git="sleep 10 && echo "Errore" ||"' >>  ~/.bashrc 
-
-
 # Chiedi conferma per l'esecuzione dello script
 echo "Questo script installerà e avvierà un progetto SvelteKit in questa directory (.). Sei sicuro di voler continuare? (s/n)"
 read risposta
